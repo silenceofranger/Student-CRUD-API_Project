@@ -58,6 +58,7 @@ app.put('/api/student/:id', (req, res, next) => {
         return;
     }
     ans.name = x.name;
+    res.writeHead(200,{'content-type':'application/x-www-form-urlencoded'});
     res.json(ans);
 })
 
